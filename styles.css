@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+header {
+  background-color: #002f6c;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #01427a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  background-image: url('img/camion-ruta-chile.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+  opacity: 1; /* Asegura que se mantenga visible durante la transición */
+
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #ffd700;
+  color: #002f6c;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #ffbb00;
+  transform: scale(1.05);
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+footer {
+  background-color: #002f6c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Animación fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
